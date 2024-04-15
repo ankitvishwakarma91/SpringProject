@@ -11,14 +11,14 @@ public class Assignment1 {
     public static void main(String[] args) {
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+        String[] persons = context.getBeanNamesForType(Person.class);
         Person person = context.getBean(Person.class);
-        Vehicle vehicle = context.getBean(Vehicle.class);
-
-//        VehicleService vs = context.getBean(VehicleService.class);
-
-        System.out.println("Person name " + person.getName());
-        System.out.println("Vehicle name " + vehicle.getName());
-        System.out.println("Owner name: "+ person.getVehicle());
+        String[] names = context.getBeanNamesForType(Vehicle.class);
+        /*Vehicle vehicle = context.getBean(Vehicle.class);
+        vehicle.getVehicleServices().playMusic();
+        vehicle.getVehicleServices().moveVehicle();*/
+        person.getVehicle().getVehicleService().playMusic();
+        person.getVehicle().getVehicleService().moveVehicle();
 
 
     }

@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
 @Component(value = "personBean")
 public class Person {
 
+
     private String name = "Ankit";
 
 //    @Autowired
-    private final  Vehicle vehicle;
+    private final Vehicle vehicle;
 
     @Autowired
     public Person(Vehicle vehicle){
