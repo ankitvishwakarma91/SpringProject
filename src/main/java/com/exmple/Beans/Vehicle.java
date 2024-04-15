@@ -2,7 +2,7 @@ package com.exmple.Beans;
 
 // Pojo class
 
-import com.example.sevieces.VehicleService;
+import com.example.services.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

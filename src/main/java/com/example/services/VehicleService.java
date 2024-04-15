@@ -1,4 +1,4 @@
-package com.example.sevieces;
+package com.example.services;
 
 import com.example.interfaces.Speakers;
 import com.example.interfaces.Tyres;
